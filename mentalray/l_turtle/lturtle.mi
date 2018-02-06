@@ -1,0 +1,22 @@
+declare shader
+        geometry "lturtle" (
+		integer		"DebugMe"	default 0, #: hidden true
+		integer		"LString"	default 0, #: enum "Branches:KochIsland:KochLake:KochLake2:KochLake2_3D:Custom:Branches2:Bush"
+		scalar		"StartLength" 	default 1.0,  #: min 0 softmax 10
+		scalar		"ScaleLength" 	default 1.0, #: min 0 softmax 2
+		scalar		"StartWidth"	default 0.2, #: min 0 softmax 2
+		scalar		"ScaleWidth"	default 1.0, #: min 0 softmax 2
+		scalar		"AngleX" 	default 0.,  #: min -180 softmax 180
+		scalar		"AngleY"	default 10., #: min -180 softmax 180
+		scalar		"AngleZ"	default 22.0, #: min -180 softmax 180
+		integer         "Depth" 	default 3,  #: min 0 softmax 10
+		integer		"Subdivs"	default 3, #:min 3 softmax 16
+		integer		"TubeType"	default 1, #: enum "Triangle:Pyramid:Prism"
+		boolean		"CloseCircle"	default 0,
+		integer		"Segments"	default 4, #:min 3 softmax 16
+		string		"Type"
+        )
+        version 1
+        apply geometry
+end declare
+

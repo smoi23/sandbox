@@ -1,0 +1,15 @@
+
+Name: lturtle.so (compiled on ubuntu64 gcc 4.5.2)
+
+Description: iterative string interpretation, geometry shader
+
+Usage:	- copy lturtle.so in mentalray/lib
+	- copy lturtle.mi in mentalray/include
+	- create transform node and assign geometry shader
+	- set attributes and render with mental ray
+
+Chars:	- F: step forward and draw
+	- lx,ly,lz: left rotations
+	- rx,ry,rz: right rotations
+	- a_: store current position and direction
+	- z_: restore position and direction 
